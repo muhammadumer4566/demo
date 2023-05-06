@@ -1,3 +1,72 @@
-h1{
-    text-align: center;
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("./umer.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.flex {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 88px;
+    left: 110px;
+    z-index: 20;
+}
+
+.box2 {
+    background-image: url("./umer.jpeg");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    z-index: 11;
+}
+
+.box1{
+    
+    background-image: url("./nic.jpeg");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+}
+
+ .btntrans{
+    height: 200px;
+    width: 200px;
+    transition: width 2s;
+    margin-top: 500px;
+ }
+
+ 
+.btntrans:hover{
+    width: 400px;
+ }
+
+ .containerflx{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.item{
+background-color: 'red';
+border: 5px solid black;   
+height: 400px;
+width: 400px;
+}
+
+ @media only screen and (max-width:600px){
+    .btntrans{
+        height: 70px;
+        width: 70px;
+     }
+     
+ .containerflx{
+flex-direction: column;
+}
 }
